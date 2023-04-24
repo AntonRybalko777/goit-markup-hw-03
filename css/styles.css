@@ -33,6 +33,7 @@ body {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
+  margin-right: 76px;
 }
 
 .logo-studio {
@@ -69,8 +70,13 @@ body {
   line-height: 1.5;
 }
 
+.contacts {
+  display: flex;
+}
+
 .hero {
   background-color: var(--dark);
+  padding: 188px 0;
 }
 
 .hero-header {
@@ -79,12 +85,16 @@ body {
   font-size: 56px;
   line-height: 60px;
   letter-spacing: 0.02em;
-  white-space: pre-line;
   line-height: 1.07;
   text-align: center;
+  width: 496px;
+  margin-left:auto;
+  margin-right:auto;
+  padding-bottom: 48px;
 }
 
 .hero-button {
+  display:block;
   font-family: inherit;
   background-color: var(--primary-brand);
   color: var(--white-background);
@@ -93,6 +103,13 @@ body {
   letter-spacing: 0.04em;
   font-weight: 500;
   cursor: pointer;
+  min-width: 169px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 16px 32px;
+  border: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-button:hover,
@@ -106,6 +123,7 @@ body {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .features-text {
@@ -120,16 +138,29 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   text-align: center;
+  margin-bottom: 72px;
 }
+
+/* Section 3 */
 
 .our-team {
   background-color: var(--light);
   letter-spacing: 0.02em;
+  padding: 120px 0;
+}
+
+.team-cards {
+  display: flex;
 }
 
 .team-card {
   background-color: var(--white-background);
   letter-spacing: 0.02em;
+  margin-right: 24px;
+}
+
+.team-card:last-child {
+  margin-right: 0;
 }
 
 .card-name {
@@ -138,18 +169,21 @@ body {
   color: var(--dark);
   font-weight: 500;
   letter-spacing: 0.02em;
+  text-align: center;
+  margin-bottom: 8px;
 }
 
 .card-position {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--text);
-
+  text-align: center;
 }
 
 .footer {
   background-color: var(--dark);
   color: var(--light);
+  padding: 100px 0;
 }
 .logo-studio-footer {
   color: var(--light);
@@ -159,8 +193,17 @@ body {
   white-space: pre-line;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  max-width: 264px;
 }
+
 /* PORTFOLIO */
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 96px 0 72px;
+}
 
 .filter {
   color: var(--primary-brand);
@@ -172,11 +215,142 @@ body {
   cursor: pointer;
   font-family: inherit;
   font-weight: 500;
-  letter-spacing: 0.04em
+  letter-spacing: 0.04em;
+  padding: 12px 24px;
 }
 
 .filter:hover,
 .filter:focus {
   color: var(--white-background);
   background-color: var(--pressed-state);
+}
+
+.portfolio-section {
+  padding-bottom: 120px;
+}
+
+.portfolio-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+}
+
+.portfolio-card {
+  border: 1px solid var(--accent);
+  flex-basis: 360px;
+}
+
+.portfolio-card-info {
+  padding: 32px 0;
+  padding-left: 16px;
+}
+
+.portfolio-card-name {
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--dark);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+
+.portfolio-card-type {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--text);
+}
+
+.container {
+  max-width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+  /* outline: solid tomato; */
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu {
+display: flex;
+align-items: flex-start;
+padding: 0px;
+gap: 40px;
+}
+
+h1,h2,h3,p,ul {
+  margin:0;
+  padding:0;
+}
+
+.header a {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.header {
+  border-bottom: 1px solid var(--accent);
+}
+
+.email {
+  margin-right: 40px;
+}
+
+.features-section {
+  padding: 120px 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.features-cards {
+  display:flex;
+}
+
+.features-card {
+  margin-right: 24px;
+  flex-basis: calc((100%-3*24px)/4);
+}
+
+.features-card:last-child {
+  margin-right: 0;
+}
+
+.pictures-section {
+  padding-bottom: 120px;
+}
+
+.pics-section {
+  display: flex;
+}
+.pic-section {
+  margin-right: 24px;
+}
+.pic-section:last-child {
+  margin-right: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.team-card-info {
+  padding: 32px 16px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+  margin: 0 auto;
 }
