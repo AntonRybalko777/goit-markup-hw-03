@@ -142,8 +142,6 @@ body {
   margin-bottom: 72px;
 }
 
-/* Section 3 */
-
 .our-team {
   background-color: var(--light);
   letter-spacing: 0.02em;
@@ -204,8 +202,6 @@ body {
   letter-spacing: 0.02em;
   max-width: 264px;
 }
-
-/* PORTFOLIO */
 
 .filters {
   display: flex;
